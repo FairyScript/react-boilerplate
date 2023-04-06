@@ -4,7 +4,7 @@
   "description": "A boilerplate for React projects.",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite run build"
+    "build": "tsc && vite build"
   },
   "keywords": [],
   "author": "fairyscript",
@@ -16,7 +16,6 @@
     "react-router-dom": "^6.10.0"
   },
   "devDependencies": {
-    "@swc/core": "1.3.44",
     "@swc/plugin-emotion": "^2.5.56",
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
