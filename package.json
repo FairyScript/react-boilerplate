@@ -10,18 +10,18 @@
   "author": "fairyscript",
   "license": "MIT",
   "dependencies": {
-    "@emotion/react": "^11.10.6",
+    "@emotion/react": "^11.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.10.0"
+    "react-router-dom": "^6.11.2"
   },
   "devDependencies": {
-    "@swc/plugin-emotion": "^2.5.56",
-    "@types/react": "^18.0.33",
-    "@types/react-dom": "^18.0.11",
-    "@vitejs/plugin-react-swc": "^3.2.0",
-    "typescript": "^5.0.3",
-    "vite": "^4.2.1",
-    "vite-tsconfig-paths": "^4.0.8"
+    "@swc/plugin-emotion": "^2.5.67",
+    "@types/react": "^18.2.7",
+    "@types/react-dom": "^18.2.4",
+    "@vitejs/plugin-react-swc": "^3.3.1",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.9",
+    "vite-tsconfig-paths": "^4.2.0"
   }
 }
