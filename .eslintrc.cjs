@@ -6,7 +6,6 @@ module.exports = {
     "plugin:react/recommended",
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
-    "plugin:valtio/recommended",
     'prettier'
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
@@ -16,7 +15,7 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
-    //RS custom rules
+    //custom rules
     'eqeqeq': ['error', 'smart'],
     '@typescript-eslint/no-unused-vars': 'warn',
     'react/react-in-jsx-scope': 'off',
