@@ -1,55 +1,56 @@
 {
   "name": "react-boilerplate",
   "version": "1.1.0",
-  "type": "module",
   "description": "A boilerplate for React projects.",
+  "author": "fairyscript",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "vite",
+    "typescript",
+    "biome",
+    "prettier",
+    "husky",
+    "lint-staged"
+  ],
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "check": "tsc"
   },
-  "keywords": [
-    "react",
-    "boilerplate",
-    "vite",
-    "typescript"
-  ],
   "lint-staged": {
     "src/**/*.{ts,tsx,js,jsx}": [
       "tsc-files --noEmit",
-      "eslint --report-unused-disable-directives --max-warnings 0",
+      "biome lint",
       "prettier --write"
     ]
   },
-  "author": "fairyscript",
-  "license": "MIT",
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.21.0"
+    "@emotion/react": "^11.13.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
   },
   "devDependencies": {
-    "@jinixx/vite-plugin-git-revision": "^0.1.15",
-    "@swc/plugin-emotion": "^2.5.105",
-    "@types/node": "^20.10.4",
-    "@types/react": "^18.2.45",
-    "@types/react-dom": "^18.2.17",
-    "@typescript-eslint/eslint-plugin": "^6.14.0",
-    "@typescript-eslint/parser": "^6.14.0",
-    "@vitejs/plugin-react-swc": "^3.5.0",
-    "eslint": "^8.55.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
-    "eslint-plugin-valtio": "^0.6.2",
+    "@biomejs/biome": "^1.9.1",
+    "@swc/plugin-emotion": "^3.0.13",
+    "@types/node": "^20.16.5",
+    "@types/react": "^18.3.7",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.7.0",
     "husky": "^8.0.3",
-    "lint-staged": "^15.2.0",
-    "prettier": "^3.1.1",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
     "tsc-files": "^1.1.4",
-    "typescript": "^5.3.3",
-    "vite": "^5.0.8",
-    "vite-tsconfig-paths": "^4.2.2"
+    "typescript": "^5.6.2",
+    "vite": "^5.4.6",
+    "vite-plugin-version-mark": "^0.1.0",
+    "vite-tsconfig-paths": "^5.0.1"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=9"
   }
 }
