@@ -1,56 +1,40 @@
 {
   "name": "react-boilerplate",
-  "version": "1.2.0",
-  "description": "A boilerplate for React projects.",
-  "author": "fairyscript",
-  "license": "MIT",
-  "keywords": [
-    "react",
-    "vite",
-    "typescript",
-    "biome",
-    "prettier",
-    "husky",
-    "lint-staged"
-  ],
-  "type": "module",
+  "private": true,
+  "version": "2.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "prepare": "husky install",
-    "check": "tsc"
+    "build": "rsbuild build",
+    "check": "biome check --write",
+    "dev": "rsbuild dev --open",
+    "format": "prettier --write .",
+    "preview": "rsbuild preview",
+    "prepare": "husky"
   },
   "lint-staged": {
-    "src/**/*.{ts,tsx,js,jsx}": [
-      "tsc-files --noEmit",
-      "biome lint",
-      "prettier --write"
+    "*.{js,jsx,ts,tsx,css}": [
+      "prettier --write",
+      "biome check --write"
     ]
   },
   "dependencies": {
-    "@emotion/react": "^11.13.3",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.26.2"
+    "@emotion/react": "^11.14.0",
+    "@tanstack/react-router": "^1.95.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.1",
-    "@swc/plugin-emotion": "^4.0.1",
-    "@types/node": "^20.16.5",
-    "@types/react": "^18.3.7",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react-swc": "^3.7.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^15.2.10",
-    "prettier": "^3.3.3",
-    "tsc-files": "^1.1.4",
-    "typescript": "^5.6.2",
-    "vite": "^5.4.6",
-    "vite-plugin-version-mark": "^0.1.0",
-    "vite-tsconfig-paths": "^5.0.1"
-  },
-  "engines": {
-    "node": ">=18",
-    "pnpm": ">=9"
+    "@biomejs/biome": "^1.9.4",
+    "@rsbuild/core": "^1.1.13",
+    "@rsbuild/plugin-react": "^1.1.0",
+    "@swc/plugin-emotion": "^7.0.3",
+    "@tanstack/router-devtools": "^1.95.1",
+    "@tanstack/router-plugin": "^1.95.1",
+    "@types/bun": "^1.1.14",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
   }
 }

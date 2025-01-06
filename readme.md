@@ -1,9 +1,29 @@
-# React Boilerplate by @fairyscript
+# Rsbuild Project
 
-This is a boilerplate for React projects. It includes:
+## Setup
 
-- React & React DOM
-- Typescript 5
-- [react-router-dom@6](https://reactrouter.com/en/6.10.0/start/overview)
-- [Vite 5](https://vitejs.dev/)
-- [Emotion 11](https://emotion.sh/docs/introduction)
+Install the dependencies:
+
+```bash
+pnpm install
+```
+
+## Get Started
+
+Start the dev server:
+
+```bash
+pnpm dev
+```
+
+Build the app for production:
+
+```bash
+pnpm build
+```
+
+Preview the production build locally:
+
+```bash
+pnpm preview
+```
