@@ -27,3 +27,6 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# TanStack Route Gen Files
+src/routeTree.gen.ts
