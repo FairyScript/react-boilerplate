@@ -1,7 +1,18 @@
 {
   "name": "react-boilerplate",
-  "private": true,
   "version": "2.0.0",
+  "description": "A boilerplate for React projects.",
+  "author": "fairyscript",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "rsbuild",
+    "typescript",
+    "biome",
+    "prettier",
+    "husky",
+    "lint-staged"
+  ],
   "scripts": {
     "build": "rsbuild build",
     "check": "biome check --write",
@@ -11,7 +22,7 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,css}": [
+    "src/**/*.{ts,tsx,js,jsx}": [
       "prettier --write",
       "biome check --write"
     ]
