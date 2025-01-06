@@ -1,29 +1,52 @@
-# Rsbuild Project
+# React Boilerplate
 
-## Setup
+This is a boilerplate project for building applications with React.
 
-Install the dependencies:
+## Features
 
-```bash
-pnpm install
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A superset of JavaScript that adds static types.
+- **Rsbuild**: A tool for building and developing projects.
+- **Emotion**: A CSS-in-JS library for writing styles.
+- **TanStack React Router**: A library for managing routing.
+- **TanStack Router Devtools**: Development tools for debugging routes.
+- **Biome**: A tool for code checking and formatting.
+- **Prettier**: A code formatting tool.
+- **Husky**: A tool for managing Git hooks.
+- **Lint-staged**: A tool for running linters on staged files before committing.
+- **SWC**: A compiler for TypeScript and JavaScript.
+
+## Getting Started
+
+### Prerequisites
+
+- Bun version 1.1.39 or higher
+
+### Installation
+
+```sh
+# Clone the repository
+git clone https://github.com/your-username/react-boilerplate.git
+
+# Navigate to the project directory
+cd react-boilerplate
+
+# Install dependencies
+bun install
 ```
 
-## Get Started
+### Running the Development Server
 
-Start the dev server:
-
-```bash
-pnpm dev
+```sh
+bun run dev
 ```
 
-Build the app for production:
+### Building for Production
 
-```bash
-pnpm build
+```sh
+bun run build
 ```
 
-Preview the production build locally:
+## License
 
-```bash
-pnpm preview
-```
+This project is licensed under the MIT License.
