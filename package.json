@@ -23,8 +23,8 @@
   },
   "lint-staged": {
     "src/**/*.{ts,tsx,js,jsx}": [
-      "prettier --write",
-      "biome check --write"
+      "biome check --write",
+      "prettier --write"
     ]
   },
   "dependencies": {
